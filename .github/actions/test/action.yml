@@ -4,15 +4,6 @@ description: 'Lint, test'
 runs:
   using: composite
   steps:
-    - name: Set up Node.js
-      uses: actions/setup-node@v3.6.0
-      with:
-        node-version: '21.6'
-
-    - name: Install dependencies
+    - name: Test application
       shell: bash
-      run: npm ci
-
-    - name: Build application
-      shell: bash
-      run: npm run build
+      run: pnpm test
