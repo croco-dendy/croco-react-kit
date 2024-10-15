@@ -1,0 +1,24 @@
+name: Build Application
+description: 'Build application'
+
+runs:
+  using: composite
+  steps:
+    - name: Check out repository code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3.6.0
+      with:
+        node-version: '21.6'
+
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v4.0.0
+
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install
+
+    - name: Build application
+      shell: bash
+      run: pnpm build
