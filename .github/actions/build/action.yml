@@ -4,9 +4,6 @@ description: 'Build application'
 runs:
   using: composite
   steps:
-    - name: Check out repository code
-      uses: actions/checkout@v3
-
     - name: Set up Node.js
       uses: actions/setup-node@v3.6.0
       with:
