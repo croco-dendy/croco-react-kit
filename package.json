@@ -5,6 +5,7 @@
   "scripts": {
     "build": "turbo vite.build",
     "dev": "turbo vite.dev",
+    "commit": "commit",
     "lint": "biome lint --error-on-warnings ./src",
     "lint:write": "biome lint --write ./src",
     "preview": "turbo vite.preview",
@@ -32,6 +33,7 @@
     "@biomejs/biome": "1.9.3",
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
+    "@commitlint/prompt-cli": "^19.5.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
