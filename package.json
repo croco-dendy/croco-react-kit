@@ -11,7 +11,8 @@
     "test": "vitest",
     "vite.build": "vite build",
     "vite.dev": "vite --host",
-    "vite.preview": "vite preview"
+    "vite.preview": "vite preview",
+    "prepare": "husky"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.10.2",
@@ -29,6 +30,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.3",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
@@ -38,6 +41,7 @@
     "@types/react-dom": "18.3.1",
     "@vitejs/plugin-react-swc": "3.7.1",
     "autoprefixer": "10.4.20",
+    "husky": "^9.1.6",
     "jsdom": "^25.0.1",
     "lightningcss": "1.27.0",
     "postcss": "8.4.47",

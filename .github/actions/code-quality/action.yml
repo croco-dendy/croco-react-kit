@@ -1,0 +1,16 @@
+name: Code Quality
+description: 'Lint, test'
+
+runs:
+  using: composite
+  steps:
+    - name: Build app
+      uses: ./.github/actions/build
+
+    - name: Run unit tests
+      shell: bash
+      run: pnpm test
+
+    - name: Run unit tests
+      shell: bash
+      run: pnpm lint

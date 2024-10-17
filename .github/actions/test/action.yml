@@ -1,9 +1,0 @@
-name: Code Quality
-description: 'Lint, test'
-
-runs:
-  using: composite
-  steps:
-    - name: Test application
-      shell: bash
-      run: pnpm test
